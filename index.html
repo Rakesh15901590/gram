@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ग्रामसेवा पोर्टल - महाराष्ट्र शासन</title>
+    <meta name="description" content="GramSeva Portal - Government of Maharashtra" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Noto Sans Devanagari"', '"Inter"', 'sans-serif'],
+            },
+            colors: {
+              gov: {
+                primary: '#15803d', // Green for Gram/Agriculture
+                secondary: '#ea580c', // Orange for Seva/Energy
+                accent: '#1e3a8a', // Blue for Trust/Official
+                bg: '#f8fafc',
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f8fafc;
+        font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
+      }
+      /* Hide scrollbar for clean UI in some panels */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
